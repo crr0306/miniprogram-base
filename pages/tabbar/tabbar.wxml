@@ -1,5 +1,5 @@
 <view class='ticket-container'>
-    <scroll-view scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}"
+  <scroll-view scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}"
       scroll-top="{{scrollTop}}">
       <!--Tab布局-->
       <view class='title'>
@@ -19,7 +19,7 @@
       </view>
  
       <!--内容布局-->
-      <swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
+      <swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}' style="height: {{clientHeight?clientHeight+'px':'auto'}}"> 
         <swiper-item class='swiper'>
           <view wx:for="{{firstList}}" wx:for-item="item" class='record-item'>
             <view class='name'>
@@ -45,5 +45,5 @@
           </view>
         </swiper-item>
       </swiper>
-    </scroll-view>
+  </scroll-view>
 </view>
