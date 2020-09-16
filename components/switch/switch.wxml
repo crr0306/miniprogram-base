@@ -1,0 +1,9 @@
+<view catchtap="doSwitch" 
+class="switch {{disabled?'switch_disabled':''}} {{noRadius?'switch_no_radius':''}} {{checked?'switch_checked':''}}" 
+style="{{width>0?'width:'+width+'rpx;height:'+height+'rpx;':''}} {{color.length>0?'background:'+color+';':''}} {{(checked && color.length>0)?'border-color:'+color+';':''}}">
+
+  <view style="{{height>0?'width:'+height/1.5+'rpx;height:'+height+'rpx;':''}}">
+    <view class="weui-switch-text checked "  style="{{height>0?'width:'+width/1.5+'rpx;height:'+height+'rpx;':''}} {{height>0?'line-height:'+height/1.2+'rpx;':''}}  " wx:if="{{checked}}">{{checkedText}}</view>
+    <view class="weui-switch-text unchecked " style="{{height>0?'width:'+width/1.5+'rpx;height:'+height+'rpx;':''}} {{height>0?'line-height:'+(height/1.2)+'rpx;':''}}" wx:else>{{uncheckedText}}</view>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/switch/switch.wxml-->
+<view class="page">
+  <view class="switch {{isOpen? 'toggle-on' : 'toggle-off'}}"
+    style="background-color:{{isOpen ?'#00CED0' : '#ddd'}}" bindtap="selSwitch">
+
+  </view>
+  <view class="switch2">
+    <view></view>
+</view>
+<my-switch conf="{{switchConf}}" bind:doSwitch="_doSwitch1"></my-switch>
+</view>

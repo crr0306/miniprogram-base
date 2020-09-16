@@ -74,6 +74,13 @@
           "id": -1,
           "name": "pages/tabbar/tabbar",
           "pathName": "pages/tabbar/tabbar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/switch/switch",
+          "pathName": "pages/switch/switch",
           "scene": null
         }
       ]
