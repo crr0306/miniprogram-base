@@ -12,4 +12,9 @@ overflow 属性规定当内容溢出元素框时发生的事情。
 border-radius
 第二个view：是里面小的圆
  border-radius
-（5）如何使用小圆左右移动
+（5）如何使用小圆左右移动:transform: translateX(-100%)
+2、箭头隐藏和展开
+(1)箭头变化
+方案1（一张图片旋转）:通过class 不同，进行旋转transform: rotate(90deg);
+方案2（多张图片）:根据是否选中来使用不同的图片
+（2）内容隐藏问题：不同class 对应不同的display:none 和display;block

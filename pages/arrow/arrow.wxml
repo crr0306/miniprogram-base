@@ -1,0 +1,13 @@
+<view class="container_in">
+	<view class="hotlssue">热点问题</view>
+  <view class="recordList">
+	<block wx:for="{{recordList}}" x:for-item="item" wx:key="item">
+		<view   class="blockbox  {{item.isOpen?'active':'' }}" bindtap="clickQues" data-id="{{item.id}}">
+			<view class="item">{{item.title}}<icon></icon></view>
+			<view class="layer">
+				{{item.content}}
+			</view>
+		</view>
+	</block>
+</view>
+</view>

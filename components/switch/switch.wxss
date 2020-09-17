@@ -1,3 +1,4 @@
+/*参考：https://www.h5w3.com/16676.html*/
 .switch {
   border-radius: 64rpx;
   /* border: 2rpx solid #ccc;  */
@@ -6,8 +7,6 @@
   left:200rpx;
   /* transition: all 0.35s cubic-bezier(0.45, 1, 0.4, 1); */
 }
-
-
 
 .switch view {
   position: absolute;
@@ -21,7 +20,10 @@
   transition: all 2s cubic-bezier(0.45, 1, 0.4, 1); */
 }
 
-
+.switch_checked view {
+  left: 100%;
+  transform: translateX(-100%);
+}
 .switch::before {
   display: block;
   content: '';
@@ -33,23 +35,20 @@
   /*移动中的效果*/
   border-radius: 64rpx;
   /*移动后的背景色*/
-  background:rgb(102, 121, 112);
+  background:rgb(47, 228, 10);
   transition: all 2s cubic-bezier(0.45, 1, 0.4, 1);
 }
 
+/*小圆被点击后移动效果*/
+/* .switch_checked {
+  border-color: #3d10f0;
+} */
 .switch_checked::before {
   transform: scale(0);
 }
 
 
-/*小圆被点击后移动效果*/
-.switch_checked {
-  border-color: #5c5770;
-}
-.switch_checked view {
-  left: 100%;
-  transform: translateX(-100%);
-}
+
 .switch_no_radius, .switch_no_radius view, .switch_no_radius::before {
   border-radius: 0;
 }

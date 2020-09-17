@@ -4,6 +4,7 @@
     "pages/logs/logs",
     "pages/tabbar/tabbar",
     "pages/switch/switch",
+    "pages/arrow/arrow",
     "components/switch/switch"
   ],
   "window":{

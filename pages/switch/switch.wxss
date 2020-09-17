@@ -3,7 +3,7 @@
   overflow: hidden;
   width: 100rpx;
   height: 50rpx;
-  border-radius: 16px;
+  border-radius: 15px;
 }
 
 .switch::before {
@@ -11,14 +11,14 @@
   position: absolute;
   background-color: #D1D3D7;
   border-radius: 15px;
-  transition: all ease-out 0.3s;
-  -webkit-transition: all 0.3s;
+  transition: all ease-out 3s;
+  -webkit-transition: all 3s;
 }
 
 .switch::after {
   position: absolute;
   display: inline-block;
- 
+  content: "";
   margin-top: 6rpx;
   height: 36rpx;
   width: 36rpx;
@@ -29,7 +29,7 @@
 }
 
 .toggle-off {
-  background-color: #e5e5e5;
+  background-color: #f81515;
 }
 
 .toggle-off::before {
@@ -53,44 +53,5 @@
 
 .toggle-on:after {
   left: 30px;
-}
-.switch2 {
-  
-  background: #00c000;
-  position: relative;
-}
-
-.switch2::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 9999rpx;
-  background: #fff;
-  transition: all 0.35s cubic-bezier(0.45, 1, 0.4, 1);
-}
-
-.switch_checked::before {
-  transform: scale(0);
-}
-
-.switch2 view {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60rpx;
-  height: 60rpx;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.4);
-  transition: all 0.35s cubic-bezier(0.45, 1, 0.4, 1);
-}
-
-.switch_checked view {
-  left: 100%;
-  transform: translateX(-100%);
 }
 

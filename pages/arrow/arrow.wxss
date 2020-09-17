@@ -1,0 +1,51 @@
+page{
+  background: #f5f5f5;
+}
+
+.hotlssue {
+  font-size: 32rpx;
+  color: #CCCCCC;
+  line-height: 44rpx;
+  padding: 20rpx 0rpx 20rpx 30rpx;
+}
+.recordList {
+  background: #fff;
+}
+.recordList .item {
+  border-bottom: 2rpx solid #EDEDED;
+  padding: 30rpx 64rpx 30rpx 30rpx;
+  position: relative;
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 40rpx;
+}
+.recordList .layer {
+  background: #f5f5f5;
+  padding: 24rpx 30rpx;
+  font-size: 24rpx;
+  color: #666666;
+  line-height: 34rpx;
+  display: none;
+}
+.recordList .blockbox.active .layer {
+  display: block;
+}
+.recordList .layer view {
+  padding-bottom: 4rpx;
+}
+.recordList .item icon {
+  position: absolute;
+  width: 32rpx;
+  height: 32rpx;
+  right: 30rpx;
+  top: 50%;
+  margin-top: -16rpx;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABkSURBVFhHY2AYKiA9PT0rNzdXdEDcC7I8LS3tPxBfGRBHgCwFWT7qiNGQgOWA0ZAYDQn00nA0TYymiUGXJgY0UY5aPiBthtFgHw12uraURxPcyEtwoJpuwLtmMEfQNbXTqxcMAELI/T00f6FfAAAAAElFTkSuQmCC") no-repeat;
+  background-size: 100% 100%;
+}
+.recordList .blockbox.active .item icon {
+  transform: rotate(90deg);
+}
+.mycontainer{
+  height: 101%;
+}
