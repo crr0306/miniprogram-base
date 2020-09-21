@@ -5,6 +5,7 @@
     "pages/tabbar/tabbar",
     "pages/switch/switch",
     "pages/arrow/arrow",
+    "pages/modal/modal",
     "components/switch/switch"
   ],
   "window":{

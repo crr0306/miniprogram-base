@@ -88,6 +88,13 @@
           "id": -1,
           "name": "pages/arrow/arrow",
           "pathName": "pages/arrow/arrow",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/modal/modal",
+          "pathName": "pages/modal/modal",
           "scene": null
         }
       ]
